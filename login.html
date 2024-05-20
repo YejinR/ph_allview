@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 화면</title>
+  <link rel="stylesheet" href="./login.css" />
+</head>
+<body style="background: #1D1C40">
+  <div class="logo">
+    <a href="intro.html"><img src="./logo2.png" alt="로고"></a>
+  </div>
+  <div class="login-container">
+    <form action="/login" method="post">
+        <div class="id">
+          <label for="user_id"></label>
+          <input type="text" id="username" name="user_id" required>
+        </div>
+        <br>
+        <div class="password">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" required>
+        </div>  
+        <br>
+        <a href="" >비밀번호 찾기</a>
+        <a href="" >아이디 찾기</a>
+        <a href="" >회원가입</a>
+        <div>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">로그인 상태 유지</label>
+        </div>
+
+        <button type="submit">로그인</button>
+    </form>
+  </div>
+  <button>고객센터</button>
+</body>
+</html>
