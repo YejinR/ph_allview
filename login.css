@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+
+}
+
+.logo{
+  width: 460px;
+  height: 96.34px;
+  margin-right:
+  padding-top: 165px;
+}
+
+.id input{
+  background: #F4E8C5;
+  width: 400px;
+  height: 60px;
+  margin: auto;
+  border-radius: 5px;
+
+
+}
+
+.password input{
+  background: #F4E8C5;
+  width: 400px;
+  height: 60px;
+  margin: auto;
+  border-radius: 5px;
+
+}
+.login-container id input{
+  margin: auto;
+  width: 400px;
+  height: 60px;
+}
+
+.login-container password input{
+  margin: auto;
+  width: 400px;
+  height: 60px;
+}
