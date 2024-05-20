@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: "Hakgyoansim Monggeulmonggeul";
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#login-finish{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login-finish > input[type="submit"]{
+    color: #000;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: #F4E8C5;
+    margin-top: 25px;
+    width: 400px;
+    height: 40px;
+}
+
+.찾은id공개{    
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#해당, #입니다{
+    color: white;
+    font-size: 32px;
+}
+
+#id{
+    color: #FDB94A;
+    font-size: 37px;
+}
