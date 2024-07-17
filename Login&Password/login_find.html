@@ -9,23 +9,29 @@
     <body style="background: #1D1C40">
         <header>
             <img
-                src="./material/logo2.png"
+                src="../material/logo2.png"
                 width="300px"
                 style="margin-top: 60px "
             />
         </header>
         <div class="login-wrapper">
-            <h2>아이디 찾기</h2>
-            <form method="post" action="서버의 url" id="login-form">
-                <img src="./material/nickname.png" alt="Nickname Icon" class="input-icon">
-                <span>닉네임</span>
-                <input type="text" name="nickname" placeholder="   10자 이하로 적어주세요." maxlength="10">
-                <img src="./material/birth.png" alt="Birthday Icon" class="input-icon">
-                <span>생년월일</span>
+            <div class="title">
+                <h2>아이디 찾기</h2>
+            </div>
+            <div class="nickname">
+                <img src="../material/nickname.png" alt="Nickname Icon" class="input-icon">
+                <div class="tag">닉네임</div>
+                <input type="text" name="nickname" placeholder="10자 이하로 적어주세요." maxlength="10">
+            </div>         
+            <div class="birth">
+                <img src="../material/birth.png" alt="Birthday Icon" class="input-icon">
+                <div class="tag">생년월일</div>
                 <input type="text" name="birthday" placeholder="   ex)19990519" maxlength="8">
-                <input type="submit" name="next" value="다음으로">
-                <input type="submit" name="back" value="뒤로가기">
-            </form>
+            </div>
+            <div class="underbutton">
+                <button class="nextbutton" type="button" onClick="location.href='../Login&Password/login_find3.html'">다음으로</button>
+                <button class="nobutton" type="button" onClick="location.href='../Login&Password/login_find.html'">뒤로가기</button>
+            </div>
         </div>
     </body>
 </html>
