@@ -6,14 +6,10 @@
         <title>로그인</title>
         <link rel="stylesheet" href="./login.css" />
     </head> 
-    <body style="background: #1D1C40">
-        <header>
-            <img
-                src="../material/logo2.png"
-                width="350px"
-                style="margin-top: 60px "
-            />
-        </header>
+    <body>
+        <div class="logo">
+          <img src="../material/logo2.png" alt="ALL:VIEW MOVIE REVIEW" />
+        </div>
         <form id="loginForm" onsubmit="return validateForm()">
           <div>
             <input type="text" id="id" name="id" class="form-input" placeholder=" ID" maxlength="10" required>
@@ -23,9 +19,9 @@
           </div>
           <div class="page_center">
             <div class="find-container">
-                <button class="findemail" type="button" onClick="location.href='../Login&Password/login_find.html'">이메일 찾기</button>
+                <button class="findemail" type="button" onClick="location.href='../Login&Password/id_find-1.html'">아이디 찾기</button>
                 <span>|</span>
-                <button class="findpassword" type="button" onClick="location.href='../login/password_find.html'">비밀번호 찾기</button>
+                <button class="findpassword" type="button" onClick="location.href='../Login&Password/password-1.html'">비밀번호 찾기</button>
                 <span>|</span>
                 <button class="to_signup" type="button" onClick="location.href='../Join/join-inform.html'">회원가입</button>
             </div>
@@ -33,7 +29,7 @@
           <div class="remember-container">
             <input type="checkbox" id="remember">
             <label for="remember">로그인상태 유지</label>
-        </div>
+          </div>
           <div class="emaillogin">
             <button class="mainlogin" type="submit" onClick="location.href='../Home/home-main.html'">로그인</button>
           </div>
