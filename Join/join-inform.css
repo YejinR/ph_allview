@@ -15,6 +15,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    min-height: 100vh; /* 전체 높이를 최소한 뷰포트 높이로 설정 */
+    padding-bottom: 50px; /* 하단 여백 추가 */
 }
 
 /* 로고 */
@@ -41,6 +43,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 .title {
@@ -152,5 +155,13 @@ input[type="checkbox"] {
     margin-top: 10px;
     color: #333;
     text-decoration: none;
+    background-color: transparent;
     font-size: 14px;
+}
+
+.error-message2 {
+    display: none; 
+    color: red; 
+    font-size: 12px;
+    margin-left: 210px;
 }

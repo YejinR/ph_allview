@@ -19,6 +19,7 @@
                 <div class="checkbox-container">
                     <input type="checkbox" id="checkbox1" onclick="checkAll(this)" />
                     <b class="t2">전체 동의하기</b>
+                    <span id="error-message" class="error-message2"></span>
                 </div>
                 <div class="ContractText-wrapper">
                     <div class="ContractText1">
@@ -74,7 +75,7 @@
                     이벤트 • 혜택 정보 수신 
                     </div>
                 </div>
-                <button class="nextbutton" type="button" onClick="location.href='../Join/join-1.html'">다음으로</button>
+                <button class="nextbutton" type="button" onclick="validateAndProceed()">다음으로</button>
                 <button class="back-link" type="button" onClick="location.href='../Login&Password/login.html'">뒤로가기</button>
             </div>
         </div>
