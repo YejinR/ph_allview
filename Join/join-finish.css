@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Hakgyoansim Monggeulmonggeul";
+}
+
+body {
+    background-color: #1D1C40;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* 전체 높이를 최소한 뷰포트 높이로 설정 */
+    padding-bottom: 100px; /* 하단 여백 추가 */
+}
+
+/* 로고 */
+.logo{
+    margin-top: 100px;
+  }
+
+.logo img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-top: 80px;
+    font-size: 60px;
+    color: #FDB94A;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.content {
+    margin: 50px 0px;
+    font-size: 25px;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.join-main {
+    align-items: center;
+}
+
+/* 버튼 */
+.nextbutton {
+    width: 300px;
+    padding: 10px;
+    background-color: #F4E8C5;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
