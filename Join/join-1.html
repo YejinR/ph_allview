@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+        <title>회원가입-1</title>
+        <link rel="stylesheet" href="./join.css" />
+    </head> 
+    <body>
+        <div class="logo">
+            <img src="../material/logo2.svg" alt="ALL:VIEW MOVIE REVIEW" />
+        </div>
+        <div class="join-wrapper">
+            <div class="join_main">
+                <span class="join_title1"><b>회원가입</b></span>
+                <div class="join_title3"><span class="red1">*</span>필수 입력 정보입니다.</div>
+                <div class="input_title">
+                    <img src="../material/nickname.svg" alt="닉네임 아이콘" class="input-icon">
+                    <label for="input_name">닉네임<span class="red">*</label>
+                </div>
+                <div class="input_main">
+                  <input type="text" id="nickname" class="nickname_input" maxlength="10" required>
+                  <button class="inner-button" type="button" onclick="checkDuplicate('nickname')"><span>중복확인</span></button>
+                </div>
+                <div class="error-message" id="nickname-error"></div>
+                <div class="input_title">
+                    <img src="../material/nickname.svg" alt="아이디 아이콘" class="input-icon">
+                    <label for="input_name">아이디<span class="red">*</label>
+                </div>
+                <div class="input_main">
+                    <input type="text" id="id" class="id_input" maxlength="10" required>
+                    <button class="inner-button" type="button" onclick="checkDuplicate('nickname')"><span>중복확인</span></button>
+                </div>
+                <div class="error-message" id="id-error"></div>
+                <div class="input_title">
+                    <img src="../material/pw.svg" alt="비밀번호 아이콘" class="input-icon">
+                    <label for="input_name">비밀번호<span class="red">*</label>
+                </div>
+                <div class="input_main">
+                    <input type="password" id="pw" class="pw_input" required>
+                </div>
+                <div class="error-message" id="pw-error"></div>                
+                <div class="explain">* 영어 대/소문자, 숫자를 포함하여 8자리 이상</div>
+                <div class="input_title">
+                    <img src="../material/pw.svg" alt="비밀번호 아이콘" class="input-icon">
+                    <label for="input_name">비밀번호 확인<span class="red">*</label>
+                </div>
+                <div class="input_main">
+                    <input type="password" id="pw-confirm" class="pw_input" required>
+                </div>
+                <div class="error-message" id="pw-confirm-error"></div>
+                <div class="input_title">
+                  <img src="../material/Q.svg" alt="질문 아이콘" class="input-icon2">
+                  <label for="input_name">힌트<span class="red">*</label>
+                </div>
+                <div class="hint_input">
+                  <select id="hintDomain" name="hintDomain" required onchange="toggleHintInput()">
+                    <option value="">힌트를 선택하세요<span class="red">*</option>
+                    <option value="나의 보물 1호">나의 보물 1호는?</option>
+                    <option value="다니던 초등학교 이름">다니던 초등학교 이름은?</option>
+                    <option value="어릴적 별명">어릴적 별명은?</option>
+                    <option value="직접입력">직접입력할게요</option>
+                  </select>
+                  <input type="text" id="customHint" class="custom-hint-input" style="display: none;">
+                </div>
+                <div class="error-message" id="hintDomain-error"></div>
+                <div class="input_title">
+                  <img src="../material/A.svg" alt="답변 아이콘" class="input-icon2">
+                  <label for="input_name">답변<span class="red">*</label>
+                </div>
+                <div class="input_main">
+                  <input type="text" id="Answer" class="A_input" maxlength="20">
+                </div>
+                <div class="error-message" id="Answer-error"></div>
+                <div class="input_title">
+                  <img src="../material/birth.svg" alt="생일 아이콘" class="input-icon">
+                  <label for="input_name">생년월일<span class="red">*</label>
+                  <span class="ex">ex)19990519</span>
+                </div>
+                <div class="input_main">
+                  <input type="number" id="birth" class="birth_input" oninput="validateNumberInput(event)" required>
+                </div>
+                <div class="error-message" id="birth-error"></div>
+                <button class="nextbutton" type="button" onclick="validateForm()">다음으로</button>
+                <button class="back-link" type="button" onClick="location.href='../Join/join-inform.html'">뒤로가기</button>
+            </div>
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                  <p id="popup-message"></p>
+                  <button onclick="closePopup()">확인</button>
+              </div>
+          </div>
+        </div>
+        <script src="join.js"></script>
+    </body>
+</html>
