@@ -55,7 +55,7 @@ function validateForm() {
     requiredFields.forEach(field => {
       if (!field.value.trim()) {
         isValid = false;
-        showError(field.id, "이 필드는 필수입니다.");
+        showError(field.id, "입력 필수 항목입니다.");
       } else {
         hideError(field.id);
       }
@@ -79,7 +79,7 @@ function validateForm() {
     }
   
     if (isValid) {
-      window.location.href = '../Join/join-2.html';
+      window.location.href = '../Join/join-finish.html';
     }
   }
   
