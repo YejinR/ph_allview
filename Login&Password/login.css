@@ -3,6 +3,12 @@
   text-decoration: none;
   color: white;
   font-family: "Hakgyoansim Monggeulmonggeul";
+<<<<<<< HEAD
+}
+
+
+
+=======
 }
 
 body {
@@ -23,6 +29,7 @@ body {
 .logo{
   margin-top: 130px;
 }
+>>>>>>> 3b4d7f9879093316a17dc50d540523edae4be582
 
 input[type="password"],
 input[type="text"] {
