@@ -1,11 +1,27 @@
-function checkAll(source) {
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(function (checkbox) {
-      if (checkbox.id !== "checkbox1") {
-        checkbox.checked = source.checked;
-      }
+// 전체 동의 체크박스
+const checkAll = document.getElementById('checkbox1');
+// 모든 체크박스
+const checkboxes = document.querySelectorAll('input[type="checkbox"]:not(#checkbox1)');
+
+// 전체 동의 체크박스 이벤트 리스너
+checkAll.addEventListener('change', function() {
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = this.checked;
     });
-}
+});
+
+// 개별 체크박스 이벤트 리스너
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        let allChecked = true;
+        checkboxes.forEach(cb => {
+            if (!cb.checked) {
+                allChecked = false;
+            }
+        });
+        checkAll.checked = allChecked;
+    });
+});
 
 function validateAndProceed() {
     var requiredCheckboxes = document.querySelectorAll('input[type="checkbox"][required]');
@@ -24,14 +40,12 @@ function validateAndProceed() {
 
 // 체크박스 상태가 변경될 때마다 에러 메시지 숨기기
 document.addEventListener('DOMContentLoaded', function() {
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('change', function() {
             document.getElementById('error-message').style.display = 'none';
         });
     });
 });
-
 // 여기서부터는 join-1
 
 function validateForm() {
