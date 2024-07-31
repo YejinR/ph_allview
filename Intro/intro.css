@@ -1,4 +1,31 @@
 *{
     font-family: "Hakgyoansim Monggeulmonggeul";
-    font-size : 20px;
 }
+
+
+body {
+    background-color: #1D1C40;
+}
+
+div {
+    text-align: center;
+}
+
+
+.l button, .h button {
+    background-color: #F4e8c5;
+    border-radius: 5px;
+    width: 140px;
+    height: 38px;
+    font-size:18px;
+    /* font-weight: bold; 글씨 두께 */
+}
+
+.l button {
+    margin-bottom: 15px;
+}
+
+.h button {
+    margin-top: 20px;
+}
+
