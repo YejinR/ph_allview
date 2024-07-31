@@ -1,0 +1,50 @@
+/* *{
+    font-family: "Hakgyoansim Monggeulmonggeul";
+}
+
+
+body {
+    background-color: #1D1C40;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 185px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    top: 3%;  /* 원하는 위치의 top 값을 설정 */
+    /* left:290px; /* 원하는 위치의 left 값을 설정 */
+    /* transform: translate(-50%, -50%); /* 버튼을 정확히 중앙에 위치시키기 위해 사용 */
+
+    * {
+        font-family: "Hakgyoansim Monggeulmonggeul";
+    }
+    
+    body {
+        background-color: #1D1C40;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    .box {
+        background-color: #fff;
+        border-radius: 5px;
+        width: 200px;  /* 너비를 300px로 설정 */
+        height: 30px; /* 높이를 100px로 설정 */
+        margin: 0;
+        position: absolute;
+        top: 20%;  
+        left: 290px; 
+        transform: translate(-50%, -50%);
+    }
+    
+    .box button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: transparent;
+    }
+    
