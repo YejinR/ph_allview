@@ -7,16 +7,25 @@
         <link rel="stylesheet" href="./login.css" />
     </head> 
     <body>
+
+
         <div class="logo">
           <img src="../material/logo2.svg" alt="ALL:VIEW MOVIE REVIEW" />
         </div>
+
+
+
         <form id="loginForm" onsubmit="return validateForm()">
           <div>
             <input type="text" id="id" name="id" class="form-input" placeholder=" ID" maxlength="10" required>
           </div>
+
+
           <div class="input_password">
             <input type="password" id="password" name="password" class="form-input" placeholder="PASSWORD" maxlength="20" required>
           </div>
+
+
           <div class="page_center">
             <div class="find-container">
                 <button class="findemail" type="button" onClick="location.href='../Login&Password/id_find-1.html'">아이디 찾기</button>
@@ -26,13 +35,20 @@
                 <button class="to_signup" type="button" onClick="location.href='../Join/join-inform.html'">회원가입</button>
             </div>
           </div>
+
+
           <div class="remember-container">
             <input type="checkbox" id="remember">
             <label for="remember">로그인상태 유지</label>
           </div>
+
           <div class="emaillogin">
             <button class="mainlogin" type="submit" onClick="location.href='../Home/home-main.html'">로그인</button>
           </div>
+          
         </form>
+
+
+
     </body>
 </html>
