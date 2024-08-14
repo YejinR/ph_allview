@@ -74,13 +74,11 @@
                 <div class="error-message" id="Answer-error"></div>
                 <div class="input_title">
                   <img src="../material/birth.svg" alt="생일 아이콘" class="input-icon">
-                  <label for="input_name">생년월일<span class="red">*</label>
-                  <span class="ex">ex)19990519</span>
+                  <label for="input_name">생년월일<span class="red">*</label><span class="error-message" id="birth-error"></span>
                 </div>
                 <div class="input_main">
-                  <input type="number" id="birth" class="birth_input" oninput="validateNumberInput(event)" required>
+                  <input type="number" id="birth" class="birth_input" oninput="validateNumberInput(event)" required placeholder="ex)19990519">
                 </div>
-                <div class="error-message" id="birth-error"></div>
                 <button class="nextbutton" type="button" onclick="validateForm()">다음으로</button>
                 <button class="back-link" type="button" onClick="location.href='../Join/join-inform.html'">뒤로가기</button>
             </div>
