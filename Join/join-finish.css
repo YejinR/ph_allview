@@ -35,6 +35,7 @@ body {
     color: #FDB94A;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
+    letter-spacing : 20px;
 }
 
 .content {

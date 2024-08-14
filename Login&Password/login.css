@@ -17,11 +17,11 @@ body {
 }
 
 .logo img {
-  width: 300px;
+  width: 450px;
 }
 
 .logo{
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 input[type="password"],
@@ -50,7 +50,7 @@ input[type="password"] {
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 25px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .input_password {
@@ -140,6 +140,6 @@ input[type="checkbox"] {
 }
 
 .remember-container{
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: left;
 }

@@ -173,11 +173,16 @@ body {
 }
 
 .main-content > .content > form > textarea{
+  padding: 15px;
   background-color: #D9D9D9;
   border-radius: 10px;
   font-size: 15px;
-  color: #918F8F;
+  color: #000;
   resize: none;
+}
+
+textarea::placeholder {
+  color: #918F8F;
 }
 
 input[type="submit"] {

@@ -34,7 +34,7 @@
 }
 
   
-input[type="search"] {
+input[type="text"] {
     background-image: url(../material/search.svg);
     background-repeat: no-repeat;
     background-position: 10px;
@@ -118,14 +118,13 @@ input[type="search"] {
     padding: 5px;
 }
 
-.main-content > .sidebar > h1{
+h1{
   font-size: 30px;
   color : #000000;
 }
-
-.main-content > .sidebar > h2{
+h2{
   font-size: 15px;
-  font-color : #000000;
+  color : #000000;
 }
 
 .main-content > .sidebar > .profile2{
