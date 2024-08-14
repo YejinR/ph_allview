@@ -2,53 +2,95 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>마이페이지 페이지</title>
+  <title>마이 페이지 페이지</title>
   <link rel="stylesheet" href="./mypage.css" />
 
 </head>
-
-
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="../material/logo3.png" alt="로고3">
-      <div class="profile1">
-        <img src="../material/profile.png" alt="프로필사진">
-        <select >
-          <option disabled selected hidden>한관우</option>
-          <option value="setting"><img src="../material/settings.png" alt="설정사진">설정</option>
-          <option value="로그아웃">로그아웃</option>
-        </select>
-      </div>
-      
+  <div class="header">
+    <img src="../material/logo3.svg" alt="로고3">
+    
+    <div class="profile1">
+      <img src="../material/profile.jpg" alt="프로필사진">
+      <select >
+        <option disabled selected hidden>한관우</option>
+        <option value="setting"><img src="../material/setting.svg" alt="설정사진">설정</option>
+        <option value="로그아웃">로그아웃</option>
+      </select>
     </div>
-    <div class="main-content">
-      <div class="sidebar">
-        <h1>설정</h1>
-        <div class="profile2">
-          <img src="../material/profile.png" alt="프로필사진">
-          <p>한관우</p>
-        </div>
-        <ul class="menu">
-        
-          <li> <a href="/myPage">마이 페이지</a> </li>
-        
-          <li> <a href="/language">언어</a> </li>
-        
-          <li> <a href="/display">디스플레이</a> </li>
-        </ul>
+    
+  </div>
+
+
+  <div class="main-content">
+    <div class="sidebar">
+      <h1>설정</h1>
+      <div class="profile2">
+        <img src="../material/profile.jpg" alt="프로필사진">
+        <p>한관우</p>
       </div>
-      <div class="content">
-        <h1>마이 페이지</h1>
-        <div class="hr1"><hr></div>
-        <div class="profile3">
-          <img src="../material/profile.png" alt="프로필사진">
-          <p>한관우</p>
-          <a href=""><img src="../material/correction.png" alt="수정"></a>
-        
-        </div>  
-        <div class="hr2"><hr></div>
+      <ul class="menu">
+      
+        <li> <a href="/myPage">마이 페이지</a> </li>
+      
+        <li> <a href="/language">언어</a> </li>
+      
+        <li> <a href="/display">디스플레이</a> </li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>마이 페이지</h1>
+
+      <div class="hr1"><hr></div>
+
+      <div class="profile3">
+        <img src="../material/profile.jpg" alt="프로필사진">
+        <p>한관우</p>
+        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+      </div>  
+
+      <div class="hr2"><hr></div>
+
+      <div class="id">
+        <p class="p1">아이디</p>
+        <p class="p2">hello1234</p>
+        <a href=""><img src="../material/pen.svg" alt="수정"></a>
       </div>
+      <div class="hr2"><hr></div>
+        
+
+
+      <div class="password">
+        <p class="p1">비밀번호</p>
+        <p class="p2">*********</p>
+        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+      </div>
+      <div class="hr2"><hr></div>
+
+      <div class="birth">
+        <p class="p1">생년월일</p>
+        <p class="p2">19990519</p>
+        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+      </div>
+      <div class="hr2"><hr></div>
+
+      <div class="search">
+        <p>검색 기록</p>
+        <form>
+          <label>
+            <input type="radio" name="toggle" value="on">
+            On
+          </label>
+          <label>
+            <input type="radio" name="toggle" value="off">
+            Off
+          </label>
+        </form>
+      </div>
+      <div class="hr2"><hr></div>
+
+      <p class="withdraw">계정탈퇴</p>
+
     </div>
   </div>
 </body>
