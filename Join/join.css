@@ -259,14 +259,37 @@ input[type="password"] {
     display: none;
 }
 
-.hint_input select{
+.hint_input select {
     width: 250px;
     padding: 6px;
     border: none;
     border-radius: 10px;
     font-size: 12px;
     background-color: #F4E8C5;
-    margin: 8px 0; 
+    margin: 8px 0;
+    text-align-last: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.hint_input select option {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #F4E8C5;
+    margin: 2px 0;
+}
+
+/* 드롭다운 화살표 스타일링 */
+.hint_input select {
+    background-image: url('../material/up-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+    /* 이미지만 회전시키기 위해 다음 속성도 추가합니다 */
+    background-origin: content-box;
 }
 
 input[type="number"] {
