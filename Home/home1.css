@@ -44,13 +44,7 @@ input[type="text"] {
 
 }
 
-  .container {
-    /* position: fixed; 뷰포트에 고정 */
-    top: 230px; /* 화면 상단에서의 위치를 조정 */
-    left: 1000px;
-    transform: translateX(-50%); /* 수평 중앙 정렬 */
-    background-size: contain;
-}
+
 
 
   .container > .header{
@@ -60,22 +54,9 @@ input[type="text"] {
     font-size :30px;
 }
 
-  .container> .movie {
-    width : 100%;
-    display : flex;
-    gap : 30px; /*이미지사이의 간격*/
-    justify-content: center;
-    font-size:45px;
-    margin-top : 250px;
-    margin-left: 100px;
 
-  }
 
-  .container> .movie > img {
-    left: 1000px; 
-    /* top: 80px; */
-    /* margin : 50px; */
-  }
+
   
 
   .profile1 > img{
@@ -142,3 +123,49 @@ h2{
   font-size: 25px;
   color : #000000;
 } 
+
+/* .movie_rank {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+.rank_container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title1{
+  text-align: left;
+  margin-left:40px;
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.movie_rank {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px;
+  margin-top: -50px;
+}
+
+.movie_rank > p {
+  margin-bottom: -70px;
+  font-size:70px;
+  margin-right: 30px;
+}
