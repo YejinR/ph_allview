@@ -177,6 +177,5 @@ body {
 
 .main-content > .content > .lang > select > option{
   padding: 30px;
-  background-color: white;
-  
+  background-color: white; 
 }
