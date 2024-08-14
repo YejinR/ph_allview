@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>계정 탈퇴 페이지</title>
-  <link rel="stylesheet" href="./withdraw.css" />
+  <title>리뷰 메인 페이지</title>
+  <link rel="stylesheet" href="./review_main.css" />
 
 </head>
 <body>
@@ -39,22 +39,19 @@
       </ul>
     </div>
     <div class="content">
-      <h1>계정탈퇴</h1>
+      <h1>언어</h1>
       <hr>
+      <div class="lang">
+        <p>올뷰 내에서 사용되는 언어를 변경합니다.</p>
+        <select >
+          <option value="kor" selected>한국어</option>
+          <option value="eng">English(US)</option>
+          <option value="chi">中文</option>
+          <option value="jap">日本語</option>
+          <option value="rus">Русский</option>
 
-      <p>간눙님과 이별인가요? 정말 아쉬워요.</p>
-      <div class="warning">
-        <img src="../material/warning.svg" alt="주의">
-        <p>계정을 삭제하면 지금까지 작성하신 리뷰, 좋아요 등의 정보가 삭제됩니다.</p>
-      </div>
-      <p>떠나시는 이유를 알려주세요.</p>
-      <form action="">
-        <textarea id="memo" cols="70" rows="13" >
-
-        서비스 탈퇴 사유에 대해 말해주세요. 더 나은 서비스를 위해 피드백을 반영하겠습니다.
-        </textarea><br>
-        <label for="withdraw"><input type="submit" value="계정 탈퇴"></label>
-      </form>
+        </select>
+      </div>  
     </div>
   </div>
 </body>

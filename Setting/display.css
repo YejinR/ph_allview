@@ -125,7 +125,7 @@ body {
 }
 
 
-.main-content > .sidebar > .menu li:nth-child(1) {
+.main-content > .sidebar > .menu li:nth-child(2) {
   background-color: #B2C0D0;
 }
 
@@ -148,106 +148,46 @@ body {
   margin-bottom: 0px;
 }
 
-.main-content > .content > .hr1{
+.main-content > .content > hr{
   margin-left: 60px;
   margin-right: 60px;
 }
 
-.main-content > .content > .profile3{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  margin-top: 20px;
-}
-
-.main-content > .content > .profile3 > img{
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  margin-right: 20px;
-}
-
-.main-content > .content > .profile3 > p{
-  font-size: 25px;
-  margin-right: 10px;
-}
-
-.main-content > .content > .hr2{
-  margin-left: 120px;
-  margin-right: 120px;
-}
-
-.main-content > .content > .id{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-}
-
-.main-content > .content > .id > .p1{
-  font-size: 25px;
-  width: 150px;
+.main-content > .content > p{
+  font-size: 20px;
+  margin-left: 100px;
   text-align: left;
 }
 
-
-.main-content > .content > .password{
+.main-content > .content > .display{
   display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-
+  flex-direction: column;
 }
 
-.main-content > .content > .password > .p1{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
+.main-content > .content > .display > p{
+  font-size: 18px;
+  margin-left: 180px;
+  margin-right: auto;
 }
 
-.main-content > .content > .birth{
+  
+.main-content > .content > .display > .a > #fontSizeRange{
+  width: 277px;
+}
+
+.main-content > .content > .display > .a{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-left: 20%;
-  height: 40px;
-
+  margin-left: 200px;
+  margin-right: auto;
+  height: 50px;
 }
 
-.main-content > .content > .birth > .p1{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
-
+.main-content > .content > .display > .a > .p1{
+  font-size: 20px;
 }
 
-.main-content > .content > .search{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-
+.main-content > .content > .display > .a > .p2{
+  font-size: 30px;
 }
-
-.main-content > .content > .search > p{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
-}
-
-.main-content > .content .p2{
-  margin-right: 20px;
-}
-
-.main-content > .content > .withdraw{
-  color: #1D1C40;
-  font-size: 10px;
-  text-align: right;
-  margin-right: 15%;  
-  margin-left: auto;
-  margin-top: 60px;
-}
-
-
-
-
-

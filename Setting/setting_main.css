@@ -125,129 +125,14 @@ body {
 }
 
 
-.main-content > .sidebar > .menu li:nth-child(1) {
-  background-color: #B2C0D0;
-}
+
 
 
 .main-content > .content{
-  display: flex;
-  flex-direction: column;
-  background-color: #B2C0D0;
-  flex-grow: 1;
+  background-color: #DBDBDB;
   border-radius: 0px 20px 20px 0px;
   width: 724px;
   height: 610px;
 }
-
-.main-content > .content > h1{
-  size: 30px;
-  margin-right: auto;
-  margin-left: 80px;
-  margin-top: 60px;
-  margin-bottom: 0px;
-}
-
-.main-content > .content > .hr1{
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.main-content > .content > .profile3{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  margin-top: 20px;
-}
-
-.main-content > .content > .profile3 > img{
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  margin-right: 20px;
-}
-
-.main-content > .content > .profile3 > p{
-  font-size: 25px;
-  margin-right: 10px;
-}
-
-.main-content > .content > .hr2{
-  margin-left: 120px;
-  margin-right: 120px;
-}
-
-.main-content > .content > .id{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-}
-
-.main-content > .content > .id > .p1{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
-}
-
-
-.main-content > .content > .password{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-
-}
-
-.main-content > .content > .password > .p1{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
-}
-
-.main-content > .content > .birth{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-
-}
-
-.main-content > .content > .birth > .p1{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
-
-}
-
-.main-content > .content > .search{
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  height: 40px;
-
-}
-
-.main-content > .content > .search > p{
-  font-size: 25px;
-  width: 150px;
-  text-align: left;
-}
-
-.main-content > .content .p2{
-  margin-right: 20px;
-}
-
-.main-content > .content > .withdraw{
-  color: #1D1C40;
-  font-size: 10px;
-  text-align: right;
-  margin-right: 15%;  
-  margin-left: auto;
-  margin-top: 60px;
-}
-
-
-
 
 
