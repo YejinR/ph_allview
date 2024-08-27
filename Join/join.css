@@ -78,7 +78,7 @@ body {
 
 .red {
     color: red;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .t2 {
@@ -341,8 +341,12 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 12px;
     text-align: left;
     align-self: flex-start;  /* 왼쪽 정렬 */
-    margin-top: 3px;
-    margin-left: 3px;  /* 왼쪽 여백 추가 */
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+#hintDomain-error{
+    margin-top: 6px;
 }
 
 .popup {
