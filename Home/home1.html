@@ -8,29 +8,21 @@
     
     </head>
     <body>
-        <div class="main_head_wrapper">
-            <div class = "logo">
-                <img src="../material/logo3.svg" >
-            </div>
-            <div class = "box">
-                <div>
-                    <input type="text" class="search-main">
-                    <select class = "search_bar">
-                        <p> 듄 검색 결과 찾기</p>
-                        
-                    </select>
-                </div>
-
-            </div>
+        <div class="header">
+            <a href="../Home/home1.html"><img src="../material/logo3.svg" alt="로고3"></a>
+            
+            <input type="text" class="search-main">
+        
             <div class="profile1">
-                <img src="../material/profile.jpg" >
-                <select class="styled-select">
-                    <option disabled selected hidden>한세진</option>
-                    <option value="setting">설정</option>
-                    <option value="logout">로그아웃</option>
-                </select>
+              <img src="../material/profile.jpg" alt="프로필사진">
+              <select onchange="window.open(value,'_self');">
+                <option disabled selected hidden>한세진</option>
+                <option value="../Setting/setting_main.html" >설정</option>
+                <option value="../Login&Password/login.html" >로그아웃</option>
+              </select>
             </div>
-        </div>
+            
+          </div>
         
         <div class="main_wrapper">
             <div class = "rank_container">
@@ -268,9 +260,6 @@
                 <hr>
             </div>
         </div>
-        
-
-        
-
+    
     </body>
 </html>
