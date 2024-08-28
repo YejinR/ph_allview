@@ -104,6 +104,17 @@ input[type="text"] {
   padding:50px;
   
 }
+
+.profile1 option[value="settings"]{
+  background-image: url('../material/setting.svg');
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 12px;
+  padding-right: 30px;
+}
+
+
+
 option > img {
   size:20px;
 }
