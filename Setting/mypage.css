@@ -20,8 +20,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1100px;
+  width: 1200px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .header > img{
@@ -38,7 +39,6 @@ body {
   width: 36.61px;
   height: 36.61px;
   border-radius: 100px;
-  margin-right: 10px;
 }
 
 .header > .profile1 > select{
@@ -47,12 +47,15 @@ body {
   background-color: #1D1C40;
   outline: 0;
   border: none;
-  font-size: 24.4px;
+  width: 120px;
+  font-size: 21px;
+  text-align: center;
 }
 
 .header > .profile1 > select > option{
   background-color: #A1A1A1;
   color: #3D3D3D;
+  text-align: center;
 }
 
 .main-content{
@@ -73,9 +76,8 @@ body {
 
 .main-content > .sidebar > h1{
   margin-right: auto;
-  margin-left: 30px;
-  margin-top: 60px;
-  margin-bottom: 0px;
+  margin-left: 60px;
+  margin-top: 50px;
   font-size: 30px;
 }
 
@@ -142,28 +144,32 @@ body {
 
 .main-content > .content > h1{
   size: 30px;
-  margin-right: auto;
-  margin-left: 80px;
-  margin-top: 60px;
-  margin-bottom: 0px;
-}
-
-.main-content > .content > .hr1{
+  width: 604px;
+  padding-left: 20px;
   margin-left: 60px;
-  margin-right: 60px;
+  margin-top: 60px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #000;
+  text-align: left;
+
 }
 
 .main-content > .content > .profile3{
   display: flex;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 120px;
+  padding-bottom: 10px;
+  width: 484px;
   margin-top: 20px;
+  border-bottom: 1px solid #000;
 }
 
 .main-content > .content > .profile3 > img{
   width: 60px;
   height: 60px;
   border-radius: 100px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 
@@ -180,12 +186,17 @@ body {
 .main-content > .content > .id{
   display: flex;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 484px;
   height: 40px;
+  border-bottom: 1px solid #000;
 }
 
 .main-content > .content > .id > .p1{
   font-size: 25px;
+  margin-left: 24.8px;
   width: 150px;
   text-align: left;
 }
@@ -194,13 +205,18 @@ body {
 .main-content > .content > .password{
   display: flex;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 484px;
   height: 40px;
+  border-bottom: 1px solid #000;
 
 }
 
 .main-content > .content > .password > .p1{
   font-size: 25px;
+  margin-left: 24.8px;
   width: 150px;
   text-align: left;
 }
@@ -208,13 +224,18 @@ body {
 .main-content > .content > .birth{
   display: flex;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 120px;
+  width: 484px;
   height: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
 
 }
 
 .main-content > .content > .birth > .p1{
   font-size: 25px;
+  margin-left: 24.8px;
   width: 150px;
   text-align: left;
 
@@ -223,23 +244,93 @@ body {
 .main-content > .content > .search{
   display: flex;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 484px;
   height: 40px;
   border-bottom: 1px solid #000;
-
 }
 
 .main-content > .content > .search > p{
   font-size: 25px;
+  margin-left: 24.8px;
   width: 150px;
   text-align: left;
+}
+
+.main-content > .content > .search > .btn > .onoff{
+  display: flex;
+  height: 40px;
+  margin-bottom: -5px;
+}
+
+.main-content > .content > .search > .btn > .onoff > p{
+  margin-left: 12px;
+}
+
+.main-content > .content > .search > .btn > p{
+  margin-bottom: 0px;
+  display: flex;
 }
 
 .main-content > .content .p2{
   margin-right: 20px;
 }
 
-.main-content > .content > .withdraw{
+.wrapper {
+  position: relative; 
+}
+
+#switch {
+  position: absolute;
+  /* hidden */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-bottom: 17px;
+}
+
+.switch_label:hover {
+  background: #efefef;
+}
+.onf_btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  border-radius: 20px;
+  background: #1D1C40;
+  transition: 0.2s;
+}
+
+/* checking style */
+#switch:checked+.switch_label {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+/* move */
+#switch:checked+.switch_label .onf_btn {
+  left: 48px;
+  background: #1D1C40;
+}
+
+.main-content > .content > a{
   color: white;
   font-size: 20px;
   text-align: right;

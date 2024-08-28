@@ -20,8 +20,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1100px;
+  width: 1200px;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  background-image: url(../material/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border-radius: 10px;
+  width: 300px; /* 검색 박스의 너비를 300px로 설정 */
+  height: 40px; /* 검색 박스의 높이를 40px로 설정 */
+  margin-left: 10px;
+  margin-right: auto;
+  font-size: 20px;
+  border: 1px solid #fff;
+  padding-left: 45px;
 }
 
 .header > img{
@@ -38,7 +53,6 @@ body {
   width: 36.61px;
   height: 36.61px;
   border-radius: 100px;
-  margin-right: 10px;
 }
 
 .header > .profile1 > select{
@@ -47,136 +61,207 @@ body {
   background-color: #1D1C40;
   outline: 0;
   border: none;
-  font-size: 24.4px;
+  width: 120px;
+  font-size: 21px;
+  text-align: center;
 }
 
 .header > .profile1 > select > option{
-  background-color: #A1A1A1;
+  background-color: #D9D9D9;
   color: #3D3D3D;
+  width: 200px;
 }
 
 .main-content{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 1120px;
+  height: 630px;
 }
 
+.main-content > .review-up{
+  display: flex;
+  flex-direction: row;
+  width: 1120px;
+  height: 220px;
+}
 
-.main-content > .sidebar{
+.main-content > .review-up > img{
+  margin-bottom: 15px;
+}
+
+.main-content > .review-up > .review-name{
   display: flex;
   flex-direction: column;
-  background-color: white;
-  width: 267px;
-  height: 610px;
-  border-radius: 20px 0px 0px 20px;
-  border: black;
 }
 
-.main-content > .sidebar > h1{
-  margin-right: auto;
-  margin-left: 30px;
-  margin-top: 60px;
-  margin-bottom: 0px;
-  font-size: 30px;
-}
-
-.main-content > .sidebar > .profile2{
-  display: flex;  
-  justify-content: center;
+.main-content > .review-up > .review-name > .review-1{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  line-height: 40px;
-  margin-bottom: 20px;
-
-
+  height: 60px;
+  border-bottom: 1px solid #fff;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
-.main-content > .sidebar > .profile2 > img{
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
+
+.main-content > .review-up > .review-name > .review-1 > p{
+  font-size: 40px;
+  color: #fff;
   margin-right: 30px;
 }
-.main-content > .sidebar > .profile2 > p{
-  font-size: 25px;
-}
 
-
-.main-content > .sidebar > .menu{
-  padding: 0px;
+.main-content > .review-up > .review-name >.review-1 > .review-inf{
   display: flex;
-  flex-direction: column;
-}
-
-.main-content > .sidebar > .menu > li{
-  list-style-type: none;
-  height: 59px;
-  border : 1px solid #918F8F;
-  border-right: none;
-  border-left: none;
-  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  padding-top: 20px;
 }
 
-.main-content > .sidebar > .menu > li > a{
-  font-size: 25px;
-  color:black;
-  text-decoration: none;
-  align-items: center;
-
-}
-
-
-.main-content > .sidebar > .menu li:nth-child(2) {
-  background-color: #B2C0D0;
-}
-
-
-.main-content > .content{
-  display: flex;
-  flex-direction: column;
-  background-color: #B2C0D0;
-  flex-grow: 1;
-  border-radius: 0px 20px 20px 0px;
-  width: 724px;
-  height: 610px;
-}
-
-.main-content > .content > h1{
-  size: 30px;
-  margin-right: auto;
-  margin-left: 80px;
-  margin-top: 60px;
-  margin-bottom: 0px;
-}
-
-.main-content > .content > hr{
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.main-content > .content > .lang{
-  display: flex;
-}
-
-.main-content > .content > .lang > p{
+.main-content > .review-up > .review-name > .review-1 > .review-inf > p{
+  color: white;
   font-size: 20px;
-  margin-left: 100px;
+}
+
+
+
+.main-content > .review-up > .review-name > .review-1 > .review-inf > img{
+  width: 6.87px;
+  height: 9px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-content > .review-up > .review-name > .review-2{
+  color: white;
+  margin-left: 40px;
+  text-align: left;
+  width: 940px;
+}
+
+.main-content > .review-up > .review-name > .review-3{
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.main-content > .review-up > .review-name > .review-3 > a > p{
+  color: #F4E8C5;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #F4E8C5;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.main-content > .review-up > .review-name > .review-3 > .popcorn{
+  margin-left: 360px;
+}
+
+.main-content > .review-down{
+  width: 1120px;
+  height: 410px;
+  background: #B2C0D0;
+  border-radius: 20px;
+}
+
+.main-content > .review-down > .profile-review{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30%;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 3px solid #918F8F;
+}
+
+.main-content > .review-down > .profile-review > img{
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+.main-content > .review-down > .profile-review > .nickname{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
 
 }
 
-.main-content > .content > .lang > select{
-  margin-left: 110px;
-  margin-top: 10px;
-  background-color: #B2C0D0;
-  outline: 0;
-  width: 100px;
+.main-content > .review-down > .profile-review > .nickname > .p1{
+  color: #444977;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+
+.main-content > .review-down > .profile-review > .nickname > .star{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
   height: 40px;
-  font-size: 22px;
-  text-align: center;
-  border: none;
+  align-items: center;
+
 }
 
-.main-content > .content > .lang > select > option{
-  padding: 30px;
-  background-color: white;
-  
+.main-content > .review-down > .profile-review > .nickname > .star > p{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 30px;
+  align-items: center;
 }
+
+.main-content > .review-down > .profile-review > .nickname > .star > img{
+  width: 27px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-content > .review-down > .profile-review > .nickname > .p2{
+  color: #000;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+
+.number{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.number >.n_box> p{
+  font-size: 16px;
+  color:#1D1C40;
+  padding: 15px;
+}
+
+.n_box {
+  width: 5px; /* 너비 설정 */
+  height: 15px; /* 높이 설정 */
+  background-color: white; /* 흰색 배경 */
+  padding: 10px;
+  display: flex; /* 텍스트 중앙 정렬*/
+  justify-content: center; /*가로 중앙 정렬*/
+  align-items: center; /*세로 중앙 정렬 */ 
+  margin-top : 5px;
+  margin-right: 13px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+

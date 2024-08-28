@@ -8,14 +8,16 @@
 </head>
 <body>
   <div class="header">
-    <img src="../material/logo3.svg" alt="로고3">
+    <a href="../Home/home1.html"><img src="../material/logo3.svg" alt="로고3"></a>
     
+    <input type="text" class="search-main">
+
     <div class="profile1">
       <img src="../material/profile.jpg" alt="프로필사진">
-      <select >
+      <select onchange="window.open(value,'_self');">
         <option disabled selected hidden>한관우</option>
-        <option value="setting"><img src="../material/setting.svg" alt="설정사진">설정</option>
-        <option value="로그아웃">로그아웃</option>
+        <option data-thumbnail="../material/setting.svg' width=16" value="../Home/home1.html" >설정</option>
+        <option value="../Home/home1.html" data-image="../material/setting.svg">로그아웃</option>
       </select>
     </div>
     
@@ -23,35 +25,108 @@
 
 
   <div class="main-content">
-    <div class="sidebar">
-      <h1>설정</h1>
-      <div class="profile2">
-        <img src="../material/profile.jpg" alt="프로필사진">
-        <p>한관우</p>
-      </div>
-      <ul class="menu">
-      
-        <li> <a href="/myPage">마이 페이지</a> </li>
-      
-        <li> <a href="/language">언어</a> </li>
-      
-        <li> <a href="/display">디스플레이</a> </li>
-      </ul>
-    </div>
-    <div class="content">
-      <h1>언어</h1>
-      <hr>
-      <div class="lang">
-        <p>올뷰 내에서 사용되는 언어를 변경합니다.</p>
-        <select >
-          <option value="kor" selected>한국어</option>
-          <option value="eng">English(US)</option>
-          <option value="chi">中文</option>
-          <option value="jap">日本語</option>
-          <option value="rus">Русский</option>
+    <div class="review-up">
+      <img src="../material/pamyo.png" alt="" width="140">
+      <div class="review-name">
+        <div class="review-1">
+            <p>파묘</p>
+            <div class="review-inf">
+                <p>미스터리</p>
+                <img src="../material/ellipse.svg" alt="점">
+                <p>134분</p>
+                <img src="../material/ellipse.svg" alt="점">
+                <p>2024.04.08</p>
+            </div>
+        </div>
+        <p class="review-2">
+          미국 LA의 무당 '화림'과 '봉길'은 거대한 가문에서 이상한 병을 겪는 가문의 장손을 만나게 된다. '화림'은 조상의 묫자리가 문제임을 알게 되고, 풍수사 '상덕'과 장의사 '영근'을 찾아가 도움을 요청한다. '상덕'은 불길한 묘의 존재를 느끼지만 '화림'의 설득으로 파묘가 시작되면서 사건은 불길한 전말을 맞이하게 된다.
+        </p>
+        <div class="review-3">
+          <img src="../material/arrow.svg" alt="">
+          <a href=""><p>티빙</p></a>
+          <a href=""><p>넷플릭스</p></a>
+          <a href=""><p>왓챠</p></a>
+          <a href=""><p>디즈니플러스</p></a>
+          <a href=""><p>쿠팡플레이</p></a>
+          <div class="popcorn"><img src="../material/popcorn.svg" alt=""></div>
+        </div>
 
-        </select>
-      </div>  
+      </div>
+      
+    </div>
+    <div class="review-down">
+      <div class="profile-review">
+        <img src="../material/profile.jpg" alt="프로필사진">
+        <div class="nickname">
+          <p class="p1">닉네임</p>
+          <div class="star">
+            <p>듄 왜 안봄 당장 봐</p>
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+          </div>
+          <p class="p2">나의 감상평 적기 ...... 나의 감상평 적기 ......나의 감상평 적기 ......나의 감상평 적기 ......나의 감상평 적기 ............나의 감상평 적기 ......더보기</p>
+        </div>
+      </div>
+      <div class="profile-review">
+        <img src="../material/profile.jpg" alt="프로필사진">
+        <div class="nickname">
+          <p class="p1">닉네임</p>
+          <div class="star">
+            <p>듄 왜 안봄 당장 봐</p>
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+          </div>
+          <p class="p2">나의 감상평 적기 ...... 나의 감상평 적기 ......나의 감상평 적기 ......나의 감상평 적기 ......나의 감상평 적기 ............나의 감상평 적기 ......더보기</p>
+        </div>
+      </div>
+      <div class="profile-review">
+        <img src="../material/profile.jpg" alt="프로필사진">
+        <div class="nickname">
+          <p class="p1">닉네임</p>
+          <div class="star">
+            <p>듄 왜 안봄 당장 봐</p>
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+            <img src="../material/star.svg" alt="별사진">
+          </div>
+          <p class="p2">나의 감상평 적기 ...... 나의 감상평 적기 ......나의 감상평 적기 ......나의 감상평 적기 ......나의 감상평 적기 ............나의 감상평 적기 ......더보기</p>
+        </div>
+      </div>
+      <div class ="number">
+        <div class="n_box">
+        <p>1</p>
+        </div>
+        <div class="n_box">
+        <p>2</p>
+        </div>
+        <div class="n_box">
+        <p>3</p>
+        </div>
+        <div class="n_box">
+        <p>4</p>
+        </div>
+        <div class="n_box">
+        <p>5</p>
+        </div>
+        <div class="n_box">
+        <p>6</p>
+        </div>
+        <div class="n_box">
+        <p>7</p>
+        </div>
+        <div class="n_box">
+        <p>▶</p>
+        </div>
+    </div>
+      
     </div>
   </div>
 </body>
