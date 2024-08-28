@@ -27,19 +27,23 @@
     margin-top:60px;
   }
   
-  input[type="text"] {
+   input[type="text"] {
     background-image: url(../material/search.svg);
     background-repeat: no-repeat;
     background-position: 10px;
     border-radius: 10px;
-    width: 300px; /* 검색 박스의 너비를 300px로 설정 */
-    height: 40px; /* 검색 박스의 높이를 40px로 설정 */
+    width: 300px; 
+    height: 40px; 
     margin-left: 10px;
     margin-right: auto;
     font-size: 20px;
     border: 1px solid #fff;
     padding-left: 45px;
-  }
+    color:#000000
+  } 
+ 
+
+ 
   
   .header > img{
     width: 192px;
@@ -78,13 +82,13 @@
 .rank_container {
   display: flex;
   flex-direction: column;
-  margin-top : -70px;
+
 }
 
 .title1{
   text-align: left;
   margin-left:40px;
-  margin-top: 100px;
+  margin-top: 30px;
   font-size: 50px;
 }
 
