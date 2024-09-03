@@ -70,9 +70,11 @@
                   <img src="../material/birth.svg" alt="생일 아이콘" class="input-icon">
                   <label for="input_name">생년월일<span class="red">*</label><span class="error-message" id="birth-error"></span>
                 </div>
-                <div class="input_main">
-                  <input type="number" id="birth" class="birth_input" oninput="validateNumberInput(event)" required placeholder=" ex)19990519">
-                </div>
+                <div class="input_birth">
+                  <select name="yy" id="year"></select>년
+                  <select name="mm" id="month"></select>월
+                  <select name="dd" id="day"></select>일
+                </div>  
                 <button class="nextbutton" type="button" onclick="validateForm()">다음으로</button>
                 <button class="back-link" type="button" onClick="location.href='../Join/join-inform.html'">뒤로가기</button>
             </div>
@@ -84,5 +86,6 @@
           </div>
         </div>
         <script src="join.js"></script>
+        <script type="text/javascript" src="birth.js"></script>
     </body>
 </html>
