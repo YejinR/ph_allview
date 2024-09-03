@@ -283,13 +283,12 @@ input[type="password"] {
 
 /* 드롭다운 화살표 스타일링 */
 .hint_input select {
-    background-image: url('../material/up-arrow.svg');
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
-    background-size: 12px;
-    padding-right: 30px;
-    /* 이미지만 회전시키기 위해 다음 속성도 추가합니다 */
-    background-origin: content-box;
 }
 
 input[type="number"] {
@@ -380,4 +379,35 @@ input[type=number]::-webkit-inner-spin-button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.input_birth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-right: 5px;
+}
+
+/* 생년월일 css */
+.input_birth select {
+    height: 30px;
+    padding: 0 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #F4E8C5;
+    font-size: 12px;
+    margin-right: 10px; /* select 박스 사이의 간격 */
+    text-align-last: center; /* option 텍스트 중앙 정렬 */
+    -moz-text-align-last: center; /* Firefox에서 중앙 정렬 */
+}
+
+/* select 박스 화살표 커스터마이징 (선택사항) */
+.input_birth select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right;
 }
