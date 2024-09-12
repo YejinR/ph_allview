@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+
   const hintSelect = document.getElementById('hintDomain');
   if (hintSelect) {
       hintSelect.addEventListener('change', toggleHintInput);
@@ -195,6 +196,9 @@ function toggleHintInput() {
         select.style.display = 'block';
         customInput.style.display = 'none';
         select.setAttribute('required', '');
-        customInput.removeAttribute('required');
+        // customInput.removeAttribute('required');
     }
+
 }
+
+//입력 시 색 변경 부분 수정하기 
