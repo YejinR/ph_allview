@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>마이 페이지 페이지</title>
   <link rel="stylesheet" href="./mypage.css" />
+  <script src="./mypage.js" defer></script>
 
 </head>
 <body>
@@ -44,43 +45,58 @@
 
       <div class="profile3">
         <img src="../material/profile.jpg" alt="프로필사진">
-        <p>한관우</p>
-        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+        <p id="nicknameDisplay">한관우</p>
+        <a href="javascript:void(0);" onclick="editField('nickname')">
+          <img src="../material/pen.svg" alt="수정" id="nicknameEditIcon">
+        </a>
+        <input type="text" id="nicknameInput" style="display: none;" />
       </div>  
-
-
+      
       <div class="id">
         <p class="p1">아이디</p>
         <p class="p2" id="userIdDisplay">hello1234</p>
-        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+        <a href="javascript:void(0);" onclick="editField('userId')">
+          <img src="../material/pen.svg" alt="수정" id="userIdEditIcon">
+        </a>
+        <input type="text" id="userIdInput" style="display: none;" />
       </div>
-        
-
-
+      
       <div class="password">
         <p class="p1">비밀번호</p>
-        <p class="p2" id="password">*********</p>
-        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+        <p class="p2" id="passwordDisplay">*********</p>
+        <a href="javascript:void(0);" onclick="editField('password')">
+          <img src="../material/pen.svg" alt="수정" id="passwordEditIcon">
+        </a>
+        <input type="password" id="passwordInput" style="display: none;" />
       </div>
-
+      
       <div class="birth">
         <p class="p1">생년월일</p>
-        <p class="p2" id="birth">19990519</p>
-        <a href=""><img src="../material/pen.svg" alt="수정"></a>
+        <p class="p2" id="birthDisplay">19990519</p>
+        <a href="javascript:void(0);" onclick="editField('birth')">
+          <img src="../material/pen.svg" alt="수정" id="birthEditIcon">
+        </a>
+        <input type="text" id="birthInput" style="display: none;" />
       </div>
+      
+      
 
+      
+      
+      
       <div class="search">
         <p>검색 기록</p>
         <div class="btn">
           <div class="onoff">
             <p>off</p><p>on</p>
           </div>
-          <input type="checkbox" id="switch">
-          <label for="switch" class="switch_label">
-          <span class="onf_btn"></span>
-        </label>
+          <input type="checkbox" id="searchHistorySwitch" />
+          <label for="searchHistorySwitch" class="switch_label">
+            <span class="onf_btn"></span>
+          </label>
         </div>
       </div>
+      
 
       <a href="../Setting/withdraw.html"><p class="withdraw">계정탈퇴</p></a>
 
