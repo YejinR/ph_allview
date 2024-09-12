@@ -303,3 +303,27 @@ hr{
 .movies>img{
   padding:3px;
 }
+
+.hide {
+  display: none !important;
+}
+
+.rel_search {
+  display:flex;
+  flex-direction:column;
+  justify-content : space-around;
+  border: 1px solid red;
+  border-radius: 12px;
+ 
+}
+
+
+.pop_rel_keywords {
+  list-style: none;
+  margin-right: 30%;
+
+}
+
+.pop_rel_keywords > li {
+  line-height : 250%
+}
