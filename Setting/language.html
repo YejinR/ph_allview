@@ -4,23 +4,22 @@
   <meta charset="UTF-8">
   <title>언어 설정 페이지</title>
   <link rel="stylesheet" href="./language.css" />
-
+  <script src="./language.js" defer></script> <!-- 자바스크립트 파일 추가 -->
 </head>
 <body>
   <div class="header">
     <a href="../Home/home1.html"><img src="../material/logo3.svg" alt="로고3"></a>
-    
     <div class="profile1">
       <img src="../material/profile.jpg" alt="프로필사진">
-      <select onchange="window.open(value,'_self');">
-        <option disabled selected hidden>한관우</option>
-        <option value="../Setting/setting_main.html" >설정</option>
-        <option value="../Login&Password/login.html" >로그아웃</option>
+      <select>
+        <option value="kor" selected>한국어</option>
+        <option value="eng">English(US)</option>
+        <option value="chi">中文</option>
+        <option value="jap">日本語</option>
+        <option value="rus">Русский</option>
       </select>
     </div>
-    
   </div>
-
 
   <div class="main-content">
     <div class="sidebar">
@@ -30,27 +29,24 @@
         <p>한관우</p>
       </div>
       <ul class="menu">
-      
-        <li> <a href="../Setting/mypage.html">마이 페이지</a> </li>
-      
-        <li> <a href="../Setting/language.html">언어</a> </li>
-      
-        <li> <a href="../Setting/display.html">디스플레이</a> </li>
+        <li><a href="../Setting/mypage.html">마이 페이지</a></li>
+        <li><a href="../Setting/language.html">언어</a></li>
+        <li><a href="../Setting/display.html">디스플레이</a></li>
       </ul>
     </div>
+
     <div class="content">
       <h1>언어</h1>
       <div class="lang">
         <p>올뷰 내에서 사용되는 언어를 변경합니다.</p>
-        <select >
+        <select>
           <option value="kor" selected>한국어</option>
           <option value="eng">English(US)</option>
           <option value="chi">中文</option>
           <option value="jap">日本語</option>
           <option value="rus">Русский</option>
-
         </select>
-      </div>  
+      </div>
     </div>
   </div>
 </body>

@@ -282,7 +282,7 @@ body {
   position: relative; 
 }
 
-#switch {
+#searchHistorySwitch {
   position: absolute;
   /* hidden */
   appearance: none;
@@ -319,13 +319,13 @@ body {
 }
 
 /* checking style */
-#switch:checked+.switch_label {
+#searchHistorySwitch:checked+.switch_label {
   background: #fff;
   border: 1px solid #000;
 }
 
 /* move */
-#switch:checked+.switch_label .onf_btn {
+#searchHistorySwitch:checked+.switch_label .onf_btn {
   left: 48px;
   background: #1D1C40;
 }

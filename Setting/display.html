@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>디스플레이 페이지</title>
   <link rel="stylesheet" href="./display.css" />
-
+  <script src="./display.js" defer></script> <!-- 자바스크립트 파일 연결 -->
 </head>
 <body>
   <div class="header">
@@ -18,9 +18,7 @@
         <option value="../Login&Password/login.html" >로그아웃</option>
       </select>
     </div>
-    
   </div>
-
 
   <div class="main-content">
     <div class="sidebar">
@@ -30,19 +28,15 @@
         <p>한관우</p>
       </div>
       <ul class="menu">
-      
-        <li> <a href="../Setting/mypage.html">마이 페이지</a> </li>
-      
-        <li> <a href="../Setting/language.html">언어</a> </li>
-      
-        <li> <a href="../Setting/display.html">디스플레이</a> </li>
+        <li><a href="../Setting/mypage.html">마이 페이지</a></li>
+        <li><a href="../Setting/language.html">언어</a></li>
+        <li><a href="../Setting/display.html">디스플레이</a></li>
       </ul>
     </div>
+
     <div class="content">
       <h1>디스플레이</h1>
-      
       <p>올뷰 내에서 사용되는 글씨 크기를 변경합니다.</p>
-      
 
       <div class="display">
         <p>글씨 크기</p>
@@ -51,8 +45,6 @@
           <input type="range" id="fontSizeRange" min="10" max="50" value="16">
           <p class="p2">가</p>
         </div>
-        
-
       </div>  
     </div>
   </div>
