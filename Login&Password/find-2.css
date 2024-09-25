@@ -111,3 +111,11 @@ input[type="text"]::placeholder {
     text-decoration: none;
     font-size: 14px;
 }
+
+.error-message {
+    margin-left: 8px;
+    margin-top: 8px;
+    color: red;
+    font-size: 12px;
+    display: none;
+}
