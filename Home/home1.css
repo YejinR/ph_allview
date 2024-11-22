@@ -287,9 +287,9 @@ hr{
 }
 
 .movie_content>.genre{
-  position: absolute;
+  position: flex;
   left : 360px;
-  margin-top:-130px;
+  margin-top:-150px;
   font-size: 28px;
   color: #000000;
 }
@@ -312,7 +312,8 @@ hr{
   display:flex;
   flex-direction:column;
   justify-content : space-around;
-  border: 1px solid red;
+  border: 1px solid #A8B7C9;
+  color:#A8B7C9;
   border-radius: 12px;
  
 }
